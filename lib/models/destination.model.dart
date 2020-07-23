@@ -21,24 +21,28 @@ List<Activity> activities = [
       name: 'A',
       type: 'P',
       startTimes: ['11:00 am', '1:00 pm'],
+      rating: 4,
       price: 10),
   Activity(
       imgURL: 'assets/images/test.png',
       name: 'B',
       type: 'Q',
       startTimes: ['12:00 pm', '2:00 pm'],
+      rating: 5,
       price: 20),
   Activity(
       imgURL: 'assets/images/test.png',
       name: 'C',
       type: 'R',
       startTimes: ['11:00 am', '1:00 pm'],
+      rating: 4,
       price: 30),
   Activity(
       imgURL: 'assets/images/test.png',
       name: 'D',
       type: 'S',
       startTimes: ['12:00 pm', '2:00 pm'],
+      rating: 3,
       price: 40)
 ];
 

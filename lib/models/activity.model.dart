@@ -6,5 +6,11 @@ class Activity {
   int rating;
   int price;
 
-  Activity({this.imgURL, this.name, this.type, this.startTimes, this.price});
+  Activity(
+      {this.imgURL,
+      this.name,
+      this.type,
+      this.startTimes,
+      this.rating,
+      this.price});
 }
