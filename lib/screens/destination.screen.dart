@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:travel_ui/models/destination.model.dart';
 
 class DestinationScreen extends StatefulWidget {
@@ -64,6 +65,48 @@ class _DestinationScreenState extends State<DestinationScreen> {
                       ],
                     )
                   ],
+                ),
+              ),
+              Positioned(
+                left: 20,
+                bottom: 20,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      widget.destination.city,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35,
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: 1.2),
+                    ),
+                    Row(
+                      children: <Widget>[
+                        Icon(
+                          FontAwesomeIcons.locationArrow,
+                          size: 10,
+                          color: Colors.white70,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          widget.destination.country,
+                          style: TextStyle(color: Colors.white70, fontSize: 20),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              Positioned(
+                right: 20,
+                bottom: 20,
+                child: Icon(
+                  Icons.location_on,
+                  color: Colors.white70,
+                  size: 25,
                 ),
               )
             ],
