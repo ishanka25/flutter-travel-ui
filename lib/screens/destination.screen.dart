@@ -26,11 +26,14 @@ class _DestinationScreenState extends State<DestinationScreen> {
                           offset: Offset(0, 2),
                           blurRadius: 6)
                     ]),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(30),
-                  child: Image(
-                    image: AssetImage(widget.destination.imgURL),
-                    fit: BoxFit.cover,
+                child: Hero(
+                  tag: widget.destination.imgURL,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    child: Image(
+                      image: AssetImage(widget.destination.imgURL),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
