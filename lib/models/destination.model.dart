@@ -44,19 +44,19 @@ List<Activity> activities = [
 
 List<Destination> destinations = [
   Destination(
-      imgURL: 'assets/images/',
+      imgURL: 'assets/images/test.png',
       city: 'X',
       country: 'AX',
       description: 'Description goes here...',
       activities: activities),
   Destination(
-      imgURL: 'assets/images/',
+      imgURL: 'assets/images/test.png',
       city: 'Y',
       country: 'BY',
       description: 'Description goes here...',
       activities: activities),
   Destination(
-      imgURL: 'assets/images/',
+      imgURL: 'assets/images/test.png',
       city: 'Z',
       country: 'CZ',
       description: 'Description goes here...',
